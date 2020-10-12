@@ -14,7 +14,7 @@ function App() {
         firstName = "Sue"
         lastName = "Meyers"
         avatar = "https://randomuser.me/api/portraits/women/75.jpg"
-        isOnline = "online"
+        isOnline = "offline"
       />
       <Contact 
         firstName = "Chris"
