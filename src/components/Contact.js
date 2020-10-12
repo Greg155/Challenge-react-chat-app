@@ -1,26 +1,32 @@
 import React from 'react';
 import './Contact.css';
+// Need to npm install prop-types
+import PropTypes from 'prop-types';
 
-function Contact() {
+
+function Contact(props) {
     return(
         <figure className="Contact">
             <img 
-                src="https://randomuser.me/api/portraits/women/40.jpg"
-                className="avatar"  alt="Random women">
+                src={props.avatar} className="avatar"  alt="Random women">
             </img>
             <div className="name-container">
                 <div className="name">
-                    Julia Mendez
+                    {props.firstName} {props.lastName}
                 </div>
                 <div className="status">
                     <div className="status-online"></div>
                     <div className="status-text">
-                    online
-                     </div>
+                        {props.isOnline}
+                    </div>
                 </div>
             </div>
         </figure>
     )
 }
 
+Contact.propTypes = {
+    firstName: PropTypes.string.isRequired,
+    lastName: PropTypes.string.isRequired
+};
 export default Contact;
