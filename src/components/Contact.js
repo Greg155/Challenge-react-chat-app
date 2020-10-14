@@ -11,7 +11,7 @@ class Contact extends React.Component {
             online : props.online
         };
     }
-
+ 
     render(){
         return(
             <figure className="Contact">
