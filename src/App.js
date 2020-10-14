@@ -8,22 +8,18 @@ function App() {
       <Contact 
         name = "Julie Mendez"
         avatar = "https://randomuser.me/api/portraits/women/40.jpg"
-        isOnline = {true}
-        isOnlineString = "online"
+        online
       />
       <Contact 
         name = "Sue Meyers"
         avatar = "https://randomuser.me/api/portraits/women/75.jpg"
-        isOnline = {false}
-        isOnlineString = "offline"
+        online = {false}
       />
       <Contact 
         name = "Chris Jones"
         avatar = "https://randomuser.me/api/portraits/men/9.jpg"
-        isOnline = {true}
-        isOnlineString = "online"
+        
         />
-
       <ContactList/>
 
     </div>
